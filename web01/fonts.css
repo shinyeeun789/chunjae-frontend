@@ -8,15 +8,16 @@
 }
 
 @font-face {
-    font-family: 'KimjungchulGothic';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
-    font-weight: 700;
+    font-family: 'Handon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Handon3gyeopsal600g.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'pretty';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-family: 'iceSotong';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceSotong-Rg.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+
