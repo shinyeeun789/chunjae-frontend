@@ -25,10 +25,10 @@ left: 0; top:90px; z-index:15; display:none; }
      height: 200px; top:48px;  left: 0; z-index:999; transition:0.3s; }
 .gnb .menu li a.dp1 { display:block; width:100%;
     line-height: 50px; border-bottom:2px solid #fff;
-text-align: center; background-color: #fff; color:#333; }
+    text-align: center; background-color: #fff; color:#333; font-weight: bolder; }
 .gnb .menu li:hover a.dp1 { border-bottom:2px solid deepskyblue; 
 background-color: deepskyblue; color:#fff; }
-.gnb .menu:hover li .sub { visibility: visible; height: 240px; opacity:1; }
+.gnb .menu:hover li .sub { visibility: visible; height: 240px; opacity:1; padding-top: 10px; }
 .gnb .menu li .sub li { padding-left:0px; line-height: 34px; clear:both; 
 width:180px; }
 .gnb .menu li .sub li a { display:block; 

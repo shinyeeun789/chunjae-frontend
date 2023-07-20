@@ -35,3 +35,6 @@ text-indent: -9999px; border-radius:20px; }
 .copyright span.end::after { content:""; padding-right: 0; }
 
 .cp { font-size: 12px; color:#ccc; line-height: 20px; }
+
+.totop { display: block; width: 42px; height: 42px; text-align: center; line-height: 42px; background-color: rgba(0,0,0,0.8); color: #fff; font-size: 30px;
+    position: fixed; right: 60px; bottom: 60px; border-radius: 26px; }
