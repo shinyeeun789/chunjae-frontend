@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Author" content="천재교육 콘텐츠 제작팀">
-    <meta http-equiv="Publisher" content="천재교육 김기태">
+    <meta http-equiv="Publisher" content="천재교육 신예은">
     <meta http-equiv="Copyright" content="copyright@chunjae.co.kr">
     <title>천재교육</title>
 
@@ -69,64 +69,17 @@
 
     <!-- 필요한 플러그인 연결 -->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <style>
-    /* 스타일 사용자 정의 초기화 */
-    * { margin: 0; padding: 0; }
-    body, html { width: 100%; font-family: 'Noto Sans KR'; overflow-x: hidden; 
-    -ms-overflow-style:none;     scrollbar-width:none;}
-    body::-webkit-scrollbar, html::-webkit-scrollbar { display:none; }
 
-    ul { list-style: none; }
-    a { text-decoration: none; color:#333; }
-    img { border:0; }
-    .wrap { clear:both; width: 100%; }
-    .wrap::after { content:""; display:block; width:100%; clear:both; }
-
-    </style>
+    <link rel="stylesheet" href="common.css">           <!-- 모듈화 -->
+    <link rel="stylesheet" href="hd.css">
 
     <style>
-    /*
-    font-family: 'Noto Sans KR';
-    font-family: 'Happy';
-    font-family: 'Handon';
-    font-family: 'iceSotong';
-    */ 
-    /* 헤더 구역 스타일 */
-    .hd { clear:both; position:relative; width: 100%; height: 90px; }
-    .hd_wrap { clear: both; width: 100%; background-color: #fff; }
-    .hd_wrap:last-child { background-color: #fff; width: 1200px; 
-    margin: 0 auto; }
-
-    .tnb { width: 1200px; margin: 0 auto; }
-    .tnb::after { content:""; clear:both; display:block; width:100%; }
-    .tnb .menu { float:right; height: 40px; margin:auto; line-height: 40px; }
-    .tnb .menu li { float:left; padding-left: 40px; }
-
-    .logo { display:block; width:auto; height:50px; float:left; }
-    .logo img { display:block; width:auto; height: 100%; }
-    .gnb { width:900px; margin: 0 auto; float: right; height: 50px; }
-    .gnb::before { content:""; display:block; width:100vw; height:210px; 
-    background-color:rgba(255,255,255,0.75); position:absolute;
-    left: 0; top:90px; z-index:15; display:none; }
-    .gnb:hover::before { display:block; }
-    .gnb .menu { clear:both; height: 50px; position:relative; }
-    .gnb .menu::after { content:""; clear:both; width: 100%; display:block; } 
-    .gnb .menu li { float:left; width:20%; position:relative; height: 50px; }
-    .gnb .menu li .sub { visibility: hidden; opacity:0; position:absolute; width: 180px;
-         height: 200px; top:48px;  left: 0; z-index:999; transition:0.3s; }
-    .gnb .menu li a.dp1 { display:block; width:100%;
-        line-height: 50px; border-bottom:2px solid #fff;
-    text-align: center; background-color: #fff; color:#333; }
-    .gnb .menu li:hover a.dp1 { border-bottom:2px solid deepskyblue; 
-    background-color: deepskyblue; color:#fff; }
-    .gnb .menu:hover li .sub { visibility: visible; height: 240px; opacity:1; }
-    .gnb .menu li .sub li { padding-left:0px; line-height: 34px; clear:both; 
-    width:180px; }
-    .gnb .menu li .sub li a { display:block; 
-        width: 180px; text-align: center; line-height: 34px; 
-    white-space:nowrap; text-overflow: ellipsis; overflow:hidden; 
-padding-left: 8px; padding-right: 8px; box-sizing: border-box; }
-    .gnb .menu li .sub li:hover a { background-color:rgba(200,200,200,0.9); }
+        /*
+        font-family: 'Noto Sans KR';
+        font-family: 'Happy';
+        font-family: 'Handon';
+        font-family: 'iceSotong';
+        */
     </style>
 
     <style>
@@ -247,43 +200,7 @@ position:absolute; right:0; top: 0; border-bottom:1px solid #fff; transform-orig
     .sl-btn-box .btn.prev { top:148px; }
     </style>
 
-    <style>
-    /* 푸터 구역 스타일 */    
-    .ft { clear:both; width: 100%; box-shadow:0px -10px 30px #ccc; }
-    .ft::after { content:""; display:block; width: 100%; clear: both; }
-    .ft_wrap { clear:both; width: 100%; border-bottom:1px solid #eee; padding-bottom: 30px; 
-    padding-top: 30px; }
-    .ft_link { clear:both; width: 1200px; margin: 0 auto; }
-    .ft_link::after { content:""; display:block; width: 100%; clear: both; }
-    .fnb { float:left; }
-    .fnb::after { content:""; display:block; width: 100%; clear: both; }
-    .fnb li { float:left; }
-    .fnb li:nth-child(2)::after { content:"|"; padding-left: 30px; padding-right: 30px;  }
-    .snb { float:right; }
-    .snb::after { content:""; display:block; width: 100%; clear: both; }
-    .snb li { float:left; margin-left: 14px; background-repeat: no-repeat;
-    background-image: url("./images/ico_foot_sns.png"); margin-top:10px;
-    border-radius:20px; }
-    .snb li a { display:block; width: 34px; height: 34px; overflow:hidden; 
-    text-indent: -9999px; border-radius:20px; }
-    .snb li.item1 { background-position: 0 0; }
-    .snb li.item2 { background-position: -34px 0; }
-    .snb li.item3 { background-position: -68px 0; }
-    .snb li.item4 { background-position: -102px 0; }
-    .snb li.item5 { background-position: -136px 0; }
-
-    .snb li.locate { background-image: none; width: 200px; height: 34px; margin-top: 0; line-height: 48px; }
-    .snb li.locate option { display:block; height: 48px; line-height: 48px; min-height:48px;     }
-    .ft_link li { line-height: 48px; }
-    #sel { height: 34px; width: 200px; }
-
-    .ft_wrap2 { clear:both; width:1200px; margin: 0 auto; padding-bottom: 30px; padding-top: 30px; } 
-    .copyright { line-height:20px; font-size:12px; }
-    .copyright span::after { content:"|"; padding-left: 20px; padding-right: 20px; color:#ccc; }
-    .copyright span.end::after { content:""; padding-right: 0; }
-
-    .cp { font-size: 12px; color:#ccc; line-height: 20px; }
-    </style>
+    <link rel="stylesheet" href="ft.css">
 </head>
 <body>
     <div class="wrap">
@@ -291,9 +208,9 @@ position:absolute; right:0; top: 0; border-bottom:1px solid #fff; transform-orig
             <div class="hd_wrap">
                 <nav class="tnb">
                     <ul class="menu">
-                        <li><a href=""> 로그인 </a></li>
-                        <li><a href=""> 회원가입 </a></li>
-                        <li><a href=""> 오시는 길 </a></li>
+                        <li><a href="login.html"> 로그인 </a></li>
+                        <li><a href="join.html"> 회원가입 </a></li>
+                        <li><a href="map.html"> 오시는 길 </a></li>
                     </ul>
                 </nav>
             </div>
